@@ -1,0 +1,186 @@
+Arithmetic and Variables
+Make calculations, and define and modify variables
+
+-Learn how to use code to get a computer to perform certain task
+-Python is one of the most popular programming languages for data science
+-The next step after this is to learn python course: http://www.kaggle.com/learn/python
+
+So the first one is to learn printing,
+
+#Printing
+is one of the simplest(and most important!) tasks you can ask a computer to do is to print a message.
+in python we ask a computer to print a message by writing:
+print()
+and putting the message inside the parentheses and enclosed in quotation marks.
+
+example:
+
+print("Hello, world!")
+
+and the output:
+Hello, world!
+
+#Arithmetic
+we can also print the value of some arithmetic operation (such as addition, subtraction, multiplication, or division).
+for instance, in the next code cell, computer adds 2 to 1 and then prints the result, which is 3.
+note: unlike printing text, we don't use any quotation marks.
+
+example:
+print(1+2)
+
+output:
+3
+
+or subtraction like:
+
+print(9-5)
+
+output:
+4
+
+you can actually do a lot of calculations with python
+operation like,
+addition +
+subtraction -
+multiplication *
+division /
+exponent **
+
+and you can control the order of operation in long calculations with parentheses:
+print(((1+3)*(9-2)/2)**2)
+
+output will be,
+196.0
+
+#Comments
+we use comments to annotate what code is doing.
+they help other people to understand your code, and they can also be helpful if you haven't looked at your own code in a while.
+
+we use # mark for a comment:
+example 
+#Multiply 3 by 2
+print (3*2)
+
+output:
+6
+
+so the line with # mark will not be excecuted
+
+#Variables
+if you want to save a value and do work for it later, we need a variables.
+variables is a container to store a value in.
+
+Creating a variables
+the next code cell creates a variable named test_var and assigns it the value that we get when we add 5 to 4.
+we then print the value that assigned to the variable, which is 9.
+
+example:
+#create a variable called test_var and give it a value of 4+5
+test_var = 4+5
+
+#print the value of test_var
+print(test_var)
+
+output:
+9
+
+in general, to work with a variable, you need to begin by selecting the name you want to use.
+variable names are ideally short and descriptive.
+they also need to satisfy several requirements:
+-they can't have spaces(e.g., test var is not allowed)
+-they can only include letters, numbers, and underscores (e.g., test_var! is not allowed)
+-they have to start with a letter or underscore (e.g., 1_var is not allowed)
+
+then, to create the variable, you need to use = to assign the value that you want it to have
+
+you can look at the value assign in the variable by using printing statemetent print()
+
+#Manipulating variables
+you can always change the value assigned to a variable by overriding the previous value
+in the code cell below, we change teh value of my_var from 3 to 100
+
+#set the value of a new variable to 3
+my_var = 3
+
+#print the value assigned to my_var
+print(my_var)
+
+#change the value of the variable to 100
+my_var = 100
+
+#print hte new value assigned to my_var
+print(my_var)
+
+output:
+3
+100
+
+note that in general, whenever you deffine a variable in a code cell, all of the code cells that follow also have access to the variable.
+for instance, we usethe next doce cell to access the value of my_var (from the code cell above) and test_var (from earlier in this tutorial).
+
+print(my_var)
+print(test_var)
+
+output:
+100
+9
+
+the next code cell tells python to increase the current value of my_var by 3
+to do this, we still need to use my_var = like before. And also just like before, new value we want to assign to the variable is to the right of the = sign
+
+example:
+#increase the value by 3
+my_var = my_var + 3
+
+#print the value assigned to my_var
+print(my_var)
+
+output:
+103
+
+#Using multiple variables
+it's common for code to use multiple variables
+this is especially useful when we have to do a long calculation with multiple inputs
+next, we calculate the number of seconds in four years
+this calculation uses five inputs
+
+example:
+#create variables
+num_years = 4
+days_per_year = 365
+hours_per_day = 24
+mins_per_hour = 60
+secs_per_min = 60
+
+#calculate number of seconds in four yeras
+total_secs = secs_per_min * mins_per_hour * hours_per_day * days_per_year * num_years
+print(total_secs)
+
+output:
+126144000
+
+As calculated above, there are 126144000 seconds in four years.
+
+Note it is possible to do this calculation without variables as just 60 * 60 * 24 * 365 * 4,
+but it is much harder to check that the calculation without variables does not have some error,
+because it is not as readable. When we use variables (such as num_years, days_per_year, etc),
+we can better keep track of each part of the calculation and more easily check for and correct any mistakes.
+
+we use variables when the values of the inputs can change
+
+#update to include leap years
+days_per_year = 365.25
+
+#calculate number of seconds in four years
+total_secs = secs_per_min * mins_per_hour * hours_per_day * days_per_year * num_years
+print(total_secs)
+
+output:
+126230400.0
+
+You might have noticed the .0 added at the end of the number, which might look unnecessary.
+This is caused by the fact that in the second calculation, we used a number with a fractional part (365.25)
+
+#Debugging
+one common error when working with variables is to accidentally intorduce typos.
+for instance, if we spell hours_per_day as hours_per_dy, python will error with message
