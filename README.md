@@ -1,1 +1,2 @@
-# belajar-c
+# belajar-python
+untuk belajar dasar python 
