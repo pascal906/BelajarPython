@@ -1,0 +1,129 @@
+Kelas Terbuka - Dasar Pemrograman Python
+
+Apa itu bahasa pemrograman Python?
+
+Mengapa belajar bahasa pemrograman python?
+Mudah dimengerti
+Gratis
+Dynamic
+Multiplatform: Web Development, Mobile Apps, Desktop Apps
+Lagi Hype: Data Science, Matematika, Bisnis, Robotics, Machine Learning, Data Analysis, Artificial Intelligent (Modul C++)
+
+Mengapa python populer?
+C++
+#include <iostream>
+
+int main(int argc, char const *argv[])
+{
+	std::cout << "Hello World" << std::endl;
+	return 0;
+}
+
+Java
+class Main{
+	public static void main(String[] args) {
+		System.out.println("Hello World");
+	}
+}
+
+python
+print("Hello World)
+
+sangat mudah dimengerti, oleh karena itulah python populer di banyak kalangan.
+
+Pembuat Python:
+1989, Guido Van Rossum, programmer, dan pembuat bahasa python.
+
+
+Instalasi Python di Windows:
+Buka browser, buka laman python.org
+Lihat pada tab download, lalu pilih versi yang ingin di download
+Download filenya dan tunggu hingga selesai
+Langsung Install, jangan lupa centang add PATH
+dan setelah penginstalan selesai, pilih disable path lenght
+lalu close.
+
+Untuk memeriksa apakah python berhasil diinstall, buka cmd ketik:
+python --version
+
+jika muncul versi dari python berarti proses penginstalan tadi telah berhasil.
+
+Selanjutnya kita perlu menginstall Code Editor:
+disini kita menggunakan Visual Studio Code.
+
+Langsung saja Search Visual Studio Code di google.
+Pilih Laman paling atas.
+Lalu langsung pilih Download for Windows (khusus windows)
+Setelah terdownload, langsung saja install.
+Pilih Accept,
+lalu centang pilihan sesuai kebutuhan, paling utama centang add to PATH.
+lalu install, tunggu hingga selesai.
+Finish.
+
+Selanjutnya setting Visual Studio Code agar python dapat berjalan di Code Editor itu.
+
+Alur Pemrograman pada Python
+
+pada python pemrograman terjadi secara interpreted, dimana tiap baris dari kode satu per satu akan masuk ke interpreter dan akan langsung di eksekusi di terminal.
+baris code -> interpreter -> terminal
+
+hal ini berbeda dengan compiled, di beberapa bahasa pemrograman lain seperti c++ contohnya,
+baris-baris kode akan di compile, oleh compiler, lalu selanjutnya akan diberikan file siap eksekusi (executed file/exe) nah ini lah yang akan di run nantinya
+baris code -> compiler -> executable
+
+pada bahasa python program itu interpreted, atau programnya akan langsung diterjemahkan.
+jadi source code yang kita buat bisa langsung di run, tanpa membuat compilenya
+
+program pada python akan dieksekusi berdasarkan urutan barisan source codenya.
+contohnya:
+print("Hello")
+print("World")
+print("Hello World")
+
+dari penggalan code di atas akan dieksekusi satu persatu sesuai urutannya.
+lalu pada python apa bila ada baris kosong, maka tidak akan di eksekusi, atau kode hanya akan melompat langsung ke bawah atau tidak membaca baris tersebut.
+print("Hello")
+print("World")
+print("Hello World")
+
+print("Helllo guys")
+
+outputnya:
+Hello
+World
+Hello World
+Helllo guys
+
+Selain baris kosong, ada juga comment yang tidak akan di eksekusi.
+comment menggunakan tanda #, contohnya
+
+print("Hello World")
+#ini adalah comment
+
+dan juga dengan 3 kali tanda ' (''')
+''' ini adalah comment
+multiline '''
+
+python juga dapat dibuat menjadi bentuk bytecode,
+bytecode sama dengan .txt tapi lebih efisien
+
+source code berupa syntax pada python, namun kita dapat mengubahnya menjadi bytecode,
+mengubah menjadi bytecode itu melalui proses compile,
+caranya dengan mengetikkan:
+python -m py_compile namafile
+ke dalam terminal
+
+nanti akan muncul folder baru yakni __pycache__, yang isinya adalah bytecode python
+
+
+Mengenal mengenai Variabel
+variabel dalam pemrograman, mirip dengan variabel pada matematika
+mis x = 2
+y = x + 4
+y = 6
+
+x disebut sebagai variable
+2 disebut sebagai value/nilai
+= disebut dengan assigment
+pada python kita tidak perlu memikirkan mengenai tipe data, karena secara otomatis akan
+ditentukan oleh python berdasarkan data yang kita simpan pada variabel ()
