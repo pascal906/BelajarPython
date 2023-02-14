@@ -56,3 +56,20 @@ while True:
 print('akhir dari program')
 
 # Tugas membuat ketupat
+spasi = 5
+count = 8
+for i in range(0, 2):
+    if i == 0:
+        for bintang in range(10):
+            if bintang % 2:
+                print(' '*spasi + '*'*bintang)
+            else:
+                spasi -= 1
+    else:
+        for bintang in range(10):
+            if bintang % 2:
+                print(' '*spasi + '*'*count)
+                count -= 1
+            else:
+                count -= 1
+                spasi += 1
