@@ -1,2 +1,2 @@
 # belajar-python
-untuk belajar dasar python 
+untuk belajar dasar python dari kelas terbuka
